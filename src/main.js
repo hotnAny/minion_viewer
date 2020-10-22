@@ -1,19 +1,21 @@
 // 
-// 
+// minion viewer (learn ui prototyping)
+// xac@ucla.edu
 // 
 var MV = MV || {}
 
 //
-//
+//  on page ready
 //
 $(document).ready(() => {
+    // load data
     YAML.load("data/minions.yml", function(data){
         MV.initUI(data)
     })
 })
 
 //
-//
+//  initialize ui
 //
 MV.initUI = (data) => {
     // load minion data as thumbnails into sidebar
@@ -22,6 +24,7 @@ MV.initUI = (data) => {
         imgMinion.attr('src', m.url)
         imgMinion.attr('alt', m.name)
         imgMinion.addClass('thumbnail')
+
         // add a click event handler to each thumbnail
         imgMinion.click(function(e){
             $('#imgView').attr('src', $(e.target).attr('src'))
@@ -34,6 +37,7 @@ MV.initUI = (data) => {
         liMinion.append(imgMinion)
         $('#ulSidebar').append(liMinion)
 
+        // by default show the first minion
         if($('#imgView').attr('src') == "") {
             imgMinion.click()
         }
