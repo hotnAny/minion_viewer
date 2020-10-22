@@ -1,0 +1,21 @@
+minions:
+  - name: Dave
+    url: data/dave.jpg
+  - name: Jerry
+    url: data/jerry.png
+  - name: John
+    url: data/john.jpg
+  - name: Kevin
+    url: data/kevin.png
+  - name: Mark
+    url: data/mark.png
+  - name: Mel
+    url: data/mel.png
+  - name: Noname
+    url: data/noname.jpg
+  - name: Phil
+    url: data/phil.jpg
+  - name: Stuart
+    url: data/stuart.jpeg
+  - name: Tim
+    url: data/tim.png

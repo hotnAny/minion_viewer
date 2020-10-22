@@ -1,0 +1,43 @@
+img.thumbnail {
+  width: 64px;
+  cursor: pointer;
+}
+
+#ulSidebar {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+li.thumbnail {
+  list-style: none;
+}
+
+#imgView {
+  max-height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#divSidebar {
+  display: inline-block;
+  overflow-y: scroll;
+  height: 500px;
+}
+
+#tbMain {
+  width: 60%;
+}
+
+#trMain {
+  overflow: scroll;
+}
+
+#tdSidebar {
+  width: 10%;
+}
+
+#divInfo {
+  text-align: center;
+  padding-top: 10px;
+}
